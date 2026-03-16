@@ -1,15 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Site</title>
+    <title>Python資料まとめ - 効率的な学習のためのリソース集</title>
+    <meta name="description" content="Python学習に役立つドキュメント、ライブラリ、チュートリアルをまとめた静的サイトです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
 </head>
 
 <body>
-    <h1>Welcome to My Static Site</h1>
-    <p>Hello World!</p>
+    <header id="main-header">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2-12 2Z" stroke="url(#paint0_linear)" stroke-width="2" />
+                <defs>
+                    <linearGradient id="paint0_linear" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3776ab" />
+                        <stop offset="1" stop-color="#38bdf8" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span>Python</span> Resources
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#basics">基礎資料</a></li>
+                <li><a href="#libraries">ライブラリ</a></li>
+                <li><a href="#automation">自動化</a></li>
+                <li><a href="#ai">AI・統計</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home" style="background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('hero.png'); background-size: cover; background-position: center;">
+            <h1>Master <span>Python</span><br>Efficiency.</h1>
+            <p>Python学習を加速させる選りすぐりの資料、ドキュメント、ベストプラクティスを一箇所に集約しました。</p>
+            <div class="hero-actions">
+                <a href="#basics" class="btn-primary">資料を見る</a>
+            </div>
+        </section>
+
+        <section id="basics">
+            <h2 style="margin-bottom: 2rem; font-size: 2.5rem; text-align: center;">基礎資料</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>公式ドキュメント</h3>
+                    <p>言語の仕様、標準ライブラリの詳細を確認するための最も信頼できる情報源です。</p>
+                </div>
+                <div class="card">
+                    <h3>コーディング規約 (PEP 8)</h3>
+                    <p>Pythonicなコードを書くためのガイドライン。読みやすく保守性の高いコードの基本です。</p>
+                </div>
+                <div class="card">
+                    <h3>環境構築ガイド</h3>
+                    <p>pyenv, venv, poetryなどを使用したモダンな開発環境の構築方法について。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="libraries" style="background: rgba(30, 41, 59, 0.3);">
+            <h2 style="margin-bottom: 2rem; font-size: 2.5rem; text-align: center;">主要ライブラリ</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Requests</h3>
+                    <p>人間にとって扱いやすいHTTPライブラリ。API連携のスタンダードです。</p>
+                </div>
+                <div class="card">
+                    <h3>Pandas</h3>
+                    <p>データ解析と操作のための強力なツール。Excel操作の自動化にも最適です。</p>
+                </div>
+                <div class="card">
+                    <h3>FastAPI</h3>
+                    <p>モダンで高速なWeb APIフレームワーク。型ヒントを活用した開発が可能です。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo"><span>Python</span> Resources</a>
+                <p style="margin-top: 1rem; color: var(--text-muted);">あなたのPythonライフを、より豊かに、より効率的に。</p>
+            </div>
+            <div class="footer-col">
+                <h4>リンク</h4>
+                <ul class="footer-links">
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#basics">基礎資料</a></li>
+                    <li><a href="#libraries">ライブラリ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.python.org/" target="_blank">Python Software Foundation</a></li>
+                    <li><a href="#">日本Python協会</a></li>
+                    <li><a href="#">PyCon JP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2026 Python Resources Summary. All Rights Reserved. なのだ。</p>
+        </div>
+    </footer>
 </body>
 
 </html>
