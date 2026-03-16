@@ -55,6 +55,22 @@ header {
     text-decoration: none;
 }
 
+.logoCenter {
+    font-size: 6.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.logoCenter span {
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .logo span {
     background: linear-gradient(90deg, var(--primary-blue), var(--accent));
     -webkit-background-clip: text;
@@ -97,7 +113,8 @@ section {
     align-items: center;
 }
 
-.hero h1 {
+.hero h1,
+.hero-logo {
     font-size: 4rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
@@ -139,6 +156,7 @@ section {
     background: var(--bg-card);
     border: 1px solid var(--glass-border);
     border-radius: 1.5rem;
+    height: 168px;
     padding: 2rem;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -203,5 +221,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero h1 { font-size: 2.5rem; }
+
+    .hero h1,
+    .hero-logo {
+        font-size: 2.5rem;
+    }
 }
