@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>過去の授業資料 - MasterPython</title>
+    <meta name="description" content="過去に行ったPythonの授業資料PDFをまとめたページです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <style>
+        .pdf-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .pdf-item {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            padding: 1.2rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .pdf-item:hover {
+            transform: translateX(6px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 8px 24px rgba(55, 171, 103, 0.15);
+        }
+
+        .pdf-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .pdf-info {
+            flex: 1;
+        }
+
+        .pdf-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+        }
+
+        .pdf-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .pdf-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.7rem;
+            background: rgba(55, 171, 103, 0.12);
+            color: var(--primary-blue);
+            border-radius: 20px;
+            border: 1px solid rgba(55, 171, 103, 0.35);
+            flex-shrink: 0;
+        }
+
+        .page-hero {
+            padding: 6rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .page-hero p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .back-link-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 0.5rem 1.8rem;
+            border: 1.5px solid rgba(0, 0, 0, 0.15);
+            border-radius: 50px;
+            transition: color 0.2s, border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            box-shadow: 0 4px 12px rgba(55, 171, 103, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <a href="index.html" class="logo"><span>Master</span>Python</a>
+        <nav>
+            <ul>
+                <li><a href="index.html#basics">0から始めるPython</a></li>
+                <li><a href="index.html#libraries">ライブラリ</a></li>
+                <li><a href="index.html#pro">プロ向け</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>過去の授業資料</h1>
+            <p>過去に行ったPythonの授業で使用したスライド・資料です。</p>
+        </section>
+
+        <section style="padding: 0 2rem 6rem;">
+            <div class="pdf-list">
+                <div class="back-link-wrap">
+                    <a href="index.html" class="back-link">← 一覧に戻る</a>
+                </div>
+
+                <a href="pdf/01.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第1回 - Pythonとは・環境セットアップ</div>
+                        <div class="pdf-desc">フローチャートとは、はじめてのPython</div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/02.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第2回 - 変数とデータ型</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/03.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第3回 - 条件分岐</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/04.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第4回 - ループ処理</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/05.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第5回 - リストとタプル</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/06.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第6回 - 辞書とセット</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/07.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第7回 - 関数</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/08.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第8回 - ファイル操作</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/09.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第9回 - クラスとオブジェクト指向</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+                <a href="pdf/10.pdf" target="_blank" rel="noopener noreferrer" class="pdf-item">
+                    <div class="pdf-icon">📄</div>
+                    <div class="pdf-info">
+                        <div class="pdf-title">第10回 - 外部ライブラリ活用</div>
+                        <div class="pdf-desc"></div>
+                    </div>
+                    <span class="pdf-badge">PDF</span>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo"><span>Master</span>Python</a>
+                <p style="margin-top: 1rem; color: var(--text-muted);">あなたのPythonライフを、より豊かに、より効率的に。</p>
+            </div>
+            <div class="footer-col">
+                <h4>リンク</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="index.html#basics">基礎資料</a></li>
+                    <li><a href="index.html#libraries">ライブラリ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2026 Python Resources Summary. All Rights Reserved. なのだ。</p>
+        </div>
+    </footer>
+</body>
+
+</html>
