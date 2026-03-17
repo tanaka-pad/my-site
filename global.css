@@ -1,18 +1,18 @@
-/* 
+/*
   Modern Design System for Python Resource Site
-  Focus on: Glassmorphism, Premium Dark UI, and Python Brand Colors
+  Focus on: Clean White UI with Green & Yellow Accent Colors
 */
 
 :root {
-    --primary-blue: #3776ab;
+    --primary-blue: #37ab67;
     --primary-yellow: #ffd43b;
-    --bg-dark: #0f172a;
-    --bg-card: #1e293b;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --accent: #38bdf8;
-    --glass-bg: rgba(30, 41, 59, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --bg-dark: #f8fafc;
+    --bg-card: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --accent: #37ab67;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -69,12 +69,23 @@ header {
     background: linear-gradient(90deg, var(--primary-blue), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* -webkit-text-stroke: 2px white; */
+    paint-order: stroke fill;
+}
+
+.logoRight {
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
 }
 
 .logo span {
     background: linear-gradient(90deg, var(--primary-blue), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* -webkit-text-stroke: 1px white; */
+    paint-order: stroke fill;
 }
 
 nav ul {
@@ -105,7 +116,7 @@ section {
 
 .hero {
     text-align: center;
-    background: radial-gradient(circle at top, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle at top, rgba(55, 171, 103, 0.1) 0%, transparent 70%);
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -142,7 +153,7 @@ section {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+    box-shadow: 0 10px 20px rgba(55, 171, 103, 0.3);
 }
 
 /* Resource Grid */
@@ -154,16 +165,18 @@ section {
 
 .card {
     background: var(--bg-card);
-    border: 1px solid var(--glass-border);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 1.5rem;
     height: 168px;
     padding: 2rem;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: var(--accent);
+    border-color: var(--primary-blue);
+    box-shadow: 0 8px 24px rgba(55, 171, 103, 0.15);
 }
 
 .card h3 {
@@ -177,7 +190,7 @@ section {
 
 /* Footer Styles */
 footer {
-    background: #0a0f1d;
+    background: #f1f5f9;
     padding: 4rem 5% 2rem;
     border-top: 1px solid var(--glass-border);
 }
