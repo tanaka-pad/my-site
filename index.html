@@ -18,9 +18,9 @@
         <nav>
             <ul>
                 <li><a href="#basics">0から始めるPython</a></li>
+                <li><a href="#archive">資料一覧</a></li>  
+                <li><a href="#pro">プロ向け</a></li>               
                 <li><a href="#libraries">ライブラリ</a></li>
-                <li><a href="#pro">プロ向け</a></li>
-                <li><a href="#ai">AI・統計</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +28,7 @@
     <main>
         <section class="hero" id="home"
             style="background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('hero.png'); background-size: cover; background-position: center;">
-            <a href="#" class="logoCenter"><span>Master</span>Python</a>
+            <a href="#" class="logoCenter"><span>Master</span><div class="logoRight">Python</div></a>
             <div class="hero-actions">
                 <a href="#basics" class="btn-primary">↓資料を見る</a>
             </div>
@@ -49,6 +49,19 @@
                     <div class="card" style="cursor: pointer;">
                         <h3>Trinket (トリンケット)</h3>
                         <p>Google Colaboratoryよりゲーム開発に特化しているサイト。こちらもネットがあれば使用可能。</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="archive">
+            <h2 style="margin-bottom: 2rem; font-size: 2.5rem; text-align: center;">アーカイブ</h2>
+            <div class="grid">
+                <a href="classroom.html" rel="noopener noreferrer"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="card" style="cursor: pointer;">
+                        <h3>過去の授業資料</h3>
+                        <p>過去行ったPythonの授業資料。もしかしたら最新の資料もここにおいてあるかも。</p>
                     </div>
                 </a>
             </div>
@@ -81,20 +94,20 @@
             </div>
         </section>
 
-        <section id="libraries" style="background: rgba(30, 41, 59, 0.3);">
+        <section id="libraries">
             <h2 style="margin-bottom: 2rem; font-size: 2.5rem; text-align: center;">主なライブラリ</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>Requests</h3>
-                    <p>人間にとって扱いやすいHTTPライブラリ。API連携のスタンダードです。</p>
+                    <h3>math</h3>
+                    <p>数学関数を提供する標準ライブラリ。三角関数、対数、指数関数など多様な計算が可能。</p>
                 </div>
                 <div class="card">
-                    <h3>Pandas</h3>
-                    <p>データ解析と操作のための強力なツール。Excel操作の自動化にも最適です。</p>
+                    <h3>pyGame</h3>
+                    <p>ゲーム開発のためのライブラリ。グラフィック、サウンド、入力処理などを簡単に扱えます。</p>
                 </div>
                 <div class="card">
-                    <h3>FastAPI</h3>
-                    <p>モダンで高速なWeb APIフレームワーク。型ヒントを活用した開発が可能です。</p>
+                    <h3>OpenCV</h3>
+                    <p>画像処理のためのライブラリ。リアルタイムの画像認識や解析が可能。</p>
                 </div>
             </div>
         </section>
@@ -106,14 +119,7 @@
                 <a href="#" class="logo"><span>Master</span>Python</a>
                 <p style="margin-top: 1rem; color: var(--text-muted);">あなたのPythonライフを、より豊かに、より効率的に。</p>
             </div>
-            <div class="footer-col">
-                <h4>リンク</h4>
-                <ul class="footer-links">
-                    <li><a href="#">ホーム</a></li>
-                    <li><a href="#basics">基礎資料</a></li>
-                    <li><a href="#libraries">ライブラリ</a></li>
-                </ul>
-            </div>
+
             <div class="footer-col">
                 <h4>コミュニティ</h4>
                 <ul class="footer-links">
@@ -124,7 +130,7 @@
             </div>
         </div>
         <div class="copy">
-            <p>&copy; 2026 Python Resources Summary. All Rights Reserved. なのだ。</p>
+            <p>&copy; 2026 Python Resources Summary. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
