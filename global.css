@@ -56,7 +56,7 @@ header {
 }
 
 .logoCenter {
-    font-size: 6.5rem;
+    font-size: 3.5rem;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -117,7 +117,7 @@ section {
 .hero {
     text-align: center;
     background: radial-gradient(circle at top, rgba(55, 171, 103, 0.1) 0%, transparent 70%);
-    min-height: 60vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +159,7 @@ section {
 /* Resource Grid */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 2rem;
 }
 
@@ -167,7 +167,7 @@ section {
     background: var(--bg-card);
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 1.5rem;
-    height: 168px;
+    min-height: 168px;
     padding: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
@@ -235,8 +235,58 @@ footer {
 
 @media (max-width: 768px) {
 
+    header {
+        padding: 0.75rem 4%;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+        flex-shrink: 0;
+    }
+
+    .logoCenter {
+        font-size: 3.5rem;
+    }
+
+    nav ul {
+        gap: 0.6rem;
+    }
+
+    nav a {
+        font-size: 0.78rem;
+    }
+
     .hero h1,
     .hero-logo {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 2.5rem 4%;
+    }
+
+    .grid {
+        gap: 1rem;
+    }
+
+    .footer-grid {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        display: none;
+    }
+
+    .logoCenter {
         font-size: 2.5rem;
     }
 }
